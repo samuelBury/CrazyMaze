@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     public GameObject camCinematique;
     public Text level;
     public GameObject levelPanel;
-    public GameObject GameOverPanel;
+    //public GameObject GameOverPanel;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
         Menu.SetActive(false);
         MapCinematique = Instantiate(PrefabMapCinematique, new Vector3(0, 0, 0), Quaternion.identity);
         levelPanel.SetActive(false);
-        GameOverPanel.SetActive(false);
+       // GameOverPanel.SetActive(false);
 
     }
     public void StartNewGame()
@@ -100,7 +100,7 @@ public class GameManager : MonoBehaviour
         {
             Level = 1;
             StartNewGame();
-            GameOverPanel.SetActive(false); 
+          //GameOverPanel.SetActive(false); 
      
         }
     }
